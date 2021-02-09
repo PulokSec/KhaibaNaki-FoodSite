@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.background{
+  background:url(images/bg.png);
+}
+nav ul li a:hover{
+  text-decoration: none;
+  background-color: goldenrod;
+  color: #F8F7F5;
+  border-radius: 5px;
+}
+#foods{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  padding-bottom: 20%;
+}
+.foodInfoDiv{
+  border: 1px solid goldenrod;
+  background-color: #F8F7F5;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  padding: 20px;
+  width: 500px;
+  margin-left: 32%;
+}
+.foodDetails{
+  align-content: center;
+  display: grid;
+  padding-bottom: 20px;
+}
+.foodDiv{
+  border: 1px solid goldenrod;
+  margin-left: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+.foodName{
+  font-size: 20px;
+  color: black;
+  text-shadow: 2px 2px #F8F7F5;
+  padding-bottom: 20px;
+}
+.foodText{
+  font-size: 40px;
+  color: black;
+  text-shadow: 2px 2px #F8F7F5;
+  padding-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  color:red;
+  padding-bottom: 20px;
+}
+.image{
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.image2{
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 300px;
+}
+#foodDetails{
+  display: none;
+}
+#errorMessage{
+  display: none;
+}
+h2{
+  color:goldenrod;
+  text-shadow: 2px 2px black;
+}
+.errorDiv{
+  border: 1px solid #F8F7F5;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  padding: 20px;
+  width: 500px;
+  margin-left: 32%;
+  text-align: center;
+}
+.btn-pos{
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px solid;
+}
+.icon{
+  font-family: Arial, 'FontAwesome';
+  color: red;
+}
+@media(max-width:992px){
+    #foods{
+      grid-template-columns: repeat(3,1fr);
+    }
+    .errorDiv{
+      width: 50%;
+    }
+    .foodInfoDiv{
+      width: 50%;
+  }  
+}
+@media(max-width:668px){
+  .foodInfoDiv{
+        width: 50%;
+    }
+    .errorDiv{
+      width: 50%;
+    }
+    #foods{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
